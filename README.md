@@ -1,7 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use Rails on Ruby to build a simple blog, implement user registration and login, logout, control permissions for operations, use CRUD methods to create, edit, delete posts, etc..
+
+Install ActionText, use Trix editor to realize the better layout of the post content, so that the layout is better.
 
 Things you may want to cover:
 
@@ -15,10 +16,6 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* How to use ActionText
 
 * ...

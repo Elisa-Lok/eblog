@@ -2,7 +2,10 @@
 
 <% @blog_posts.each do |blog_post| %>
 <div>
-  <div><%= link_to blog_post.title, blog_post_path(blog_post.id),class: "hover:text-blue-500" %></div>
-  <p class="text-justify"><%= sanitize(blog_post.content).truncate(200, omission: "...")%></p>
+  <div><%= link_to blog_post.title, blog_post_path(blog_post.id),class: "hover:text-gray-500 no-underline" %></div>
+  <p class="text-justify text-base font-normal">
+    <%#= sanitize(blog_post.content).truncate(200, omission: "...")%>
+    <%= blog_post.content.to_plain_text.truncate(200, omission: "...")%>
+  </p>
 </div>
 <% end %>
